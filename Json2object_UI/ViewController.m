@@ -87,7 +87,7 @@ NSString * const ThirdPartyLibraryTitle = @"ThirdPartyLibraryTitle";
     NSTask *task;
     task = [[NSTask alloc] init];
     [task setLaunchPath: @"/usr/bin/python3"];//旧代码
-//    [task setLaunchPath:@"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/Resources/Python.app/Contents/MacOS/Python"];
+//    [task setLaunchPath:@"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/Resources/Python.app/Contents/MacOS/Python"];//系统版本可能存在差异
     
     NSArray *arguments;
     arguments = @[json2objectPath,self.jsonFilePathTextField.stringValue,self.baseClassNameTextField.stringValue];
